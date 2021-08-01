@@ -12,15 +12,11 @@ number = 6480
 
 count = []
 
-for i in range(2,number+1):
-    print(number)
-    if number % i == 0:
-        print(i)
-        number = number // i
-        #print(number)
-        count.append(i)
-        #print(count)
-        if number == 1 :
+while i <= number:
+    for j in range(2,number +1):
+        if number % j == 0:
+            number //= j
+            count.append(j)
             break
-
+    i += 1
 print(count)
