@@ -1,3 +1,4 @@
+"""
 def is_prime(n):
     prime = True
     for i in range(2,int(n**0.5 + 1)):
@@ -6,12 +7,14 @@ def is_prime(n):
             break
     return prime
 
+"""
 
 
-number = 6480
+
+number = 6780
 
 count = []
-
+i = 1
 while i <= number:
     for j in range(2,number +1):
         if number % j == 0:
