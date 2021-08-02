@@ -38,7 +38,6 @@ number = n
 c = []
 for i in range(2,n+1):
     if n % i == 0:
-        #n //= i
         c.append(i)
 
 prime_divisor = map(is_prime,c)
@@ -46,4 +45,29 @@ prime_divisor = list(prime_divisor)
 prime_divisor = filter(lambda x:x!=None,prime_divisor)
 prime_divisor = list(prime_divisor)
 prime_count = len(prime_divisor)
+
 print(prime_divisor , prime_count)
+
+def Prime_Divisor_count(n):
+    c = []
+    for i in range(2, n + 1):
+        if n % i == 0:
+            c.append(i)
+
+    prime_divisor = map(is_prime, c)
+    prime_divisor = list(prime_divisor)
+    prime_divisor = filter(lambda x: x != None, prime_divisor)
+    prime_count = len(list(prime_divisor))
+    return prime_count
+
+klist = []
+for i in range(0,3):
+    a = int(input())
+    klist.append(a)
+
+vcount = map(Prime_Divisor_count,klist)
+vcount = list(vcount)
+KV = dict(zip(klist,vcount))
+print (KV)
+
+
