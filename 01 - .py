@@ -68,6 +68,11 @@ for i in range(0,3):
 vcount = map(Prime_Divisor_count,klist)
 vcount = list(vcount)
 KV = dict(zip(klist,vcount))
-print (KV)
+print (KV.items())
 
+k_max = max(KV.values())
+
+for value,key in KV.items():
+    if key == k_max:
+        print(value,key)
 
