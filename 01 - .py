@@ -71,8 +71,10 @@ KV = dict(zip(klist,vcount))
 print (KV.items())
 
 k_max = max(KV.values())
-
+krepo = []
 for value,key in KV.items():
     if key == k_max:
-        print(value,key)
+        krepo.append(value)
+        #print(value,key)
+print(max(krepo),k_max)
 
