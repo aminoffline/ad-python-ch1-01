@@ -20,7 +20,7 @@ def Prime_Divisor_count(n):
     return prime_count
 
 klist = []
-for i in range(0,3):
+for i in range(0,10):
     a = int(input())
     klist.append(a)
 
